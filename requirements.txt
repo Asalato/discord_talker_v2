@@ -1,0 +1,14 @@
+pypdf
+langchain
+langchain-core
+langchain-community
+openai
+python-dotenv
+
+google-api-python-client>=2.100.0
+arxiv
+pyowm
+stackapi
+wikipedia
+
+discord
