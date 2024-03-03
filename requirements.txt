@@ -1,4 +1,3 @@
-pypdf
 langchain
 langchain-core
 langchain-community
@@ -10,5 +9,6 @@ arxiv
 pyowm
 stackapi
 wikipedia
+pypdf
 
 discord

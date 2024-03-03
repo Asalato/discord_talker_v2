@@ -6,5 +6,5 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip --no-cache-dir -r ./requirements.txt install
+RUN pip install --no-cache-dir -r ./requirements.txt
 CMD ["python", "./main.py"]
