@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-llm = OpenAI(model_name="gpt-3.5-turbo-0125", temperature=0)
+llm = OpenAI(model_name="gpt-3.5-turbo", temperature=0)
 
 search = GoogleSearchAPIWrapper()
 search_tool = Tool(
@@ -64,7 +64,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-llm_with_tools = ChatOpenAI(model_name="gpt-4-0125-preview").bind(
+llm_with_tools = ChatOpenAI(model_name="gpt-4-turbo").bind(
     functions=[format_tool_to_openai_function(t) for t in tools])
 agent = (
         {
