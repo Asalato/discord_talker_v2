@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-llm = OpenAI(model_name="gpt-3.5-turbo", temperature=0)
+llm = OpenAI(model_name="gpt-4o", temperature=0)
 
 search = GoogleSearchAPIWrapper()
 search_tool = Tool(
